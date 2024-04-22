@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BTVN_LeVanTuan.Sites.Site1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+        <div class="header-top">
+          <div class="header-top__logo">
+            <img src="../img/logo.png" alt="" />
+          </div>
+          <div class="header-top__menu">
+            <ul class="list-menu">
+              <li><a href="WebForm1.aspx">Trang chủ</a></li>
+              <li><a href="Sanpham.aspx">Sản phẩm</a></li>
+              <li><a href="Lienhe.aspx">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="header-top__icon">
+            <ul>
+                <li>
+                    <a href="DangNhap.aspx"> Đăng nhập</a>
+                 
+                   <a href="ThongTin.aspx">Thông tin</a>
+                  </li>                   
+              <li>
+                <a href="DangKy.aspx">Đăng kí</a>
+              
+                <a href="DangXuat.aspx"> Đăng xuất</a>
+            </li>
+            </ul>
+          </div>
+        </div>       
+      </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+        <p>Design by Lê Văn Tuấn - DHTI14A2CL</p>
+      </footer>
+        </div>
+    </form>
+</body>
+</html>
